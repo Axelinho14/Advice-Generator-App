@@ -1,0 +1,112 @@
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+*{
+    margin: 0cm;
+    padding: 0cm;
+    font-family: Manrope;
+}
+body{
+    background-color:var(--Dark-Blue) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:var(--Dark-Grayish-Blue) ;
+    width: 18cm;
+    height: 11cm;
+    border-radius: 0.4cm;
+}
+#number{
+    margin-top: 1cm;
+    color: var(--Neon-Green);
+    font-size: 0.4cm;
+    letter-spacing: 0.1cm;
+}
+#device{
+    width: 16cm;
+    /* height: 4.5cm; */
+    margin-top: 0.8cm;
+    color: var(--Light-Cyan);
+    font-size: 1cm;
+}
+#divider{
+    margin-top: 1.5cm;
+    width: 16cm;
+}
+#btn{
+    position: absolute;
+    top: 10.2cm;
+    border-style: none;
+    padding: 0.4cm;
+    padding-top: 0.45cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    border-radius: 2cm;
+    background-color: var(--Neon-Green);
+    transition: 0.3s;
+}
+#btn:hover{
+    cursor: pointer;
+    box-shadow: hsl(150, 100%, 66%) 0px 0px 35px;
+}
+#divider-mobile{
+    display: none;
+}
+@media screen and (max-width : 625px){
+    .container{
+        width: 10cm;
+        height: 10cm;
+        border-radius: 0.4cm;
+    }
+    #number{
+        margin-top: 1cm;
+        color: var(--Neon-Green);
+        font-size: 0.4cm;
+        letter-spacing: 0.1cm;
+    }
+    #device{
+        width: 9cm;
+        /* height: 4.5cm; */
+        margin-top: 0.8cm;
+        font-size: 0.7cm;
+    }
+    #divider{
+        display: none;
+        margin-top: 1.5cm;
+        width: 9cm;
+    }
+    #divider-mobile{
+        display: flex;
+        margin-top: 1.5cm;
+        width: 9cm;
+    }
+    #btn{
+        position: absolute;
+        top: 9.2cm;
+        border-style: none;
+        padding: 0.4cm;
+        padding-top: 0.45cm;
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+        border-radius: 2cm;
+        background-color: var(--Neon-Green);
+        transition: 0.3s;
+    }
+    #btn:hover{
+        cursor: pointer;
+        box-shadow: hsl(150, 100%, 66%) 0px 0px 35px;
+    }
+}
